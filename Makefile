@@ -24,7 +24,7 @@ shell:
 		--rm \
 		-it \
 		--entrypoint=/bin/sh \
-		${REPOSITORY}/${IMAGE_NAME}:${TAG}
+		${REPOSITORY}/${IMAGE_NAME}:${TAG} || true
 
 .PHONY: test
 test:
